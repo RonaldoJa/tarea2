@@ -2,6 +2,11 @@
 <button mat-raised-button color="accent" (click)="openDialogAgregar()"> Agregar</button>
 <br><br>
 
+<mat-form-field>
+    <mat-label>Buscar</mat-label>
+    <input matInput (keyup)="filtrar($event)" placeholder="">
+  </mat-form-field>
+
 
 <div *ngIf="data.length > 0">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
