@@ -17,7 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import { PageInicialComponent } from './page-inicial/page-inicial.component';
-import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.component'
+import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.component';
+import { EditarClienteComponent } from './editar-cliente/editar-cliente.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.compo
     FooterComponent,
     LoginComponent,
     PageInicialComponent,
-    AgregarClienteComponent
+    AgregarClienteComponent,
+    EditarClienteComponent
   ],
   imports: [
     BrowserModule, AppRouterModule, BrowserAnimationsModule, 

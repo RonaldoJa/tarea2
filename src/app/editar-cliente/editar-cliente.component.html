@@ -1,0 +1,31 @@
+<mat-card> 
+    <div style="text-align:center;">
+        <mat-card-title>Editar Cliente</mat-card-title>
+    </div>   
+    <br>
+    <form [formGroup]="usuarioEditado">
+        <mat-form-field class="campos-field">
+            <input matInput formControlName="cedula" [(ngModel)]="data.cedula">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput formControlName="nombres" [(ngModel)]="data.nombres">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput formControlName="apellidos" [(ngModel)]="data.apellidos">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput formControlName="direccion" [(ngModel)]="data.direccion">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput formControlName="edad" [(ngModel)]="data.edad">
+        </mat-form-field>
+
+        <button mat-raised-button [disabled] = "!usuarioEditado.valid" (click)="onSubmit()">Aceptar</button>  
+        <button mat-raised-button color="accent" (click)="cancelar()">Cancelar</button>      
+    </form>
+    
+</mat-card>
